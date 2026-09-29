@@ -1,0 +1,24 @@
+{
+  "name": "manufactory",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Browser artifact forge — one codec, one forensic engine, three surfaces (web + api + mnf).",
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "build": "npm run build:web && npm run build:api && npm run build:cli",
+    "build:web": "npm -w @mfy/web run build",
+    "build:api": "node scripts/build-api.mjs",
+    "build:cli": "node scripts/build-cli.mjs",
+    "start": "node apps/api/dist/index.js",
+    "mnf": "node apps/cli/dist/mnf.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/pako": "^2.0.3",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.6.0"
+  }
+}

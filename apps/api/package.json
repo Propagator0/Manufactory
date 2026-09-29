@@ -1,0 +1,14 @@
+{
+  "name": "@mfy/api",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "start": "node dist/index.js" },
+  "dependencies": {
+    "@fastify/cors": "^10.0.0",
+    "@fastify/static": "^8.0.0",
+    "@mfy/artifacts": "*",
+    "@mfy/schema": "*",
+    "fastify": "^5.0.0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@mfy/cli",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "bin": { "mnf": "dist/mnf.js" },
+  "dependencies": {
+    "@mfy/artifacts": "*",
+    "@mfy/codec": "*",
+    "@mfy/schema": "*"
+  }
+}
